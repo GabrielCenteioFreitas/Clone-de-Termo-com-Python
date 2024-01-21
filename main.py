@@ -5,7 +5,7 @@ import random
 os.system('cls')
 lista_palavras = pandas.read_csv('lista_palavras.txt')
 numero = random.randint(0, 7628)
-palavra_escolhida = 'vazio'
+palavra_escolhida = ''
 tentativas_feitas = [[['[ ]',37], ['[ ]',37], ['[ ]',37], ['[ ]',37], ['[ ]',37]] for _ in range(6)]
 teclado = ['Q','W','E','R','T','Y','U','I','O','P',
            'A','S','D','F','G','H','J','K','L',
