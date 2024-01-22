@@ -74,7 +74,7 @@ vitoria = []
 def pedir_palpite(tentativas_feitas, palavra_escolhida, teclado, cores):
     for qntd_tentativas in range(6):
         tentativa = input('\n\n\033[1mInsira uma palavra de 5 letras: \033[0m')
-        while len(tentativa) != 5 or not tentativa.isalpha() or unidecode(tentativa).lower() not in lista_palavras.columns[:]:
+        while unidecode(tentativa).lower() not in lista_palavras.columns[:]:
             os.system('cls')
             layout(tentativas_feitas, teclado, cores)
             tentativa = input('\n\n\033[1mInsira uma palavra de 5 letras: \033[0m')
